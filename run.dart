@@ -14,7 +14,7 @@ void main() {
 
     String p = entity.path;
 
-    if (p.indexOf(assetDirName) != -1 && !p.contains("_assets")) {
+    if (p.indexOf(assetDirName) != -1 && !p.contains("_assets") && !p.contains("cassets")) {
       p = p.substring(p.indexOf(assetDirName) - 1);
 
       if (!p.contains(".")) {
